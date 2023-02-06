@@ -36,7 +36,7 @@ public class ElementSum {
         {
             FileWriter writer = new FileWriter(file, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
-            bufferedWriter.write(sum);
+            bufferedWriter.write(String.valueOf(sum));
             System.out.println("Ghi file thành công!");
             bufferedWriter.close();
         }

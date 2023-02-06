@@ -37,7 +37,7 @@ public class MaxElement {
         {
             FileWriter writer = new FileWriter(file, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
-            bufferedWriter.write(maxElement);
+            bufferedWriter.write(String.valueOf(maxElement));
             System.out.println("Ghi file thành công!");
             bufferedWriter.close();
         }
@@ -64,7 +64,7 @@ public class MaxElement {
         File readFile = new File("src/resources/number.txt");
         List<Integer> numberList = readFile(readFile);
         int maxElement = maxElement(numberList);
-        File writeFile = new File("src/resources/result.txt");
+        File writeFile = new File("resources/result.txt");
         writeFile(writeFile, maxElement);
 
     }
